@@ -1,2 +1,2 @@
 # hinstytodo.github.io
-Simp
+Simple Todo-Project
