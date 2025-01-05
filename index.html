@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="header">
+        <p id="text" class="logotype">Todo-Task</p>
+        <div class="header-container">
+            <form class="todo-management">
+                <label><input type="text" class="header-input" placeholder="Введите задачу на день:"></label>
+                <button class="header-button" id="add">Добавить</button>
+            </form>
+            <button class="header-button-remove" id="remove">Очистить список</button>
+        </div>
+    </header>
+
+    <div class="todo-main">
+        <div class="todo-container">
+            <ol class="todo-list" id="todo">
+
+            </ol>
+            <div class="todo-delimiter">
+                <span class="todo-delimiter-text">Выполненные задачи</span>
+                    <img src="images/arrow-down.png" alt="">
+            </div>
+
+            <ol class="todo-finished" id="complete">
+
+            </ol>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
